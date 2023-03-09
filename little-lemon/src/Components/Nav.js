@@ -10,3 +10,5 @@ function Nav() {
     </nav>
   )
 }
+
+export default Nav;
