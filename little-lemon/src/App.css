@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 90%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  max-width: 90vw;
+  justify-content: space-between;
+  /* padding: 1.2rem 15%; */
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 10px;
+  list-style: none;
+}
+
+li {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.logo {
+  color: red;
+}
