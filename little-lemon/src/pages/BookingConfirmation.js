@@ -1,3 +1,5 @@
+import React from "react";
+
 const BookingConfirmation = ({
   name,
   date,
@@ -10,18 +12,18 @@ const BookingConfirmation = ({
   return (
     <main>
       <section
-        style={{ display: 'flex', 'flex-direction': 'column', gap: '0.5rem' }}
+        style={{ display: "flex", "flex-direction": "column", gap: "0.5rem" }}
       >
         <h1>Thank you for your booking, {name}!</h1>
         <p>
-          We confirm your reservation for {date} at {time} for {guests}{' '}
-          {guests === 1 ? 'guest' : 'guests'}.
+          We confirm your reservation for {date} at {time} for {guests}{" "}
+          {guests === 1 ? "guest" : "guests"}.
         </p>
         {occasion && (
           <p>
-            We noticed that you want to celebrate{' '}
-            {occasion === 'birthday' ? 'a' : 'an'} {occasion}. Thank you for
-            your trust in us, we will handle your request with priority!{' '}
+            We noticed that you want to celebrate{" "}
+            {occasion === "birthday" ? "a" : "an"} {occasion}. Thank you for
+            your trust in us, we will handle your request with priority!{" "}
           </p>
         )}
         {table && (

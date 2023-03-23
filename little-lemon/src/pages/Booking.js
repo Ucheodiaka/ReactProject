@@ -1,7 +1,8 @@
-import { useNavigate } from 'react-router-dom';
-import Restaurant from '../asset/Restaurant.jpg';
-import BookingForm from '../component/BookingForm';
-import './Booking.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Restaurant from "../assets/Restaurant.jpg";
+import BookingForm from "../components/BookingForm";
+import "./Booking.css";
 
 const Booking = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Booking = () => {
         <img
           src={Restaurant}
           alt="Our outdoor ambience"
-          style={{ borderRadius: '8px', width: '65%' }}
+          style={{ borderRadius: "8px", width: "65%" }}
         />
       </section>
       <section>
